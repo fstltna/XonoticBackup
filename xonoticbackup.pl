@@ -19,27 +19,27 @@ if (! -d $BACKUPDIR)
 }
 print "Moving existing backups: ";
 
-if (-f "$BACKUPDIR/minebackup-5.tgz")
+if (-f "$BACKUPDIR/xonoticbackup-5.tgz")
 {
-	unlink("$BACKUPDIR/minebackup-5.tgz")  or warn "Could not unlink $BACKUPDIR/minebackup-5.tgz: $!";
+	unlink("$BACKUPDIR/xonoticbackup-5.tgz")  or warn "Could not unlink $BACKUPDIR/xonoticbackup-5.tgz: $!";
 }
-if (-f "$BACKUPDIR/minebackup-4.tgz")
+if (-f "$BACKUPDIR/xonoticbackup-4.tgz")
 {
-	rename("$BACKUPDIR/minebackup-4.tgz", "$BACKUPDIR/minebackup-5.tgz");
+	rename("$BACKUPDIR/xonoticbackup-4.tgz", "$BACKUPDIR/xonoticbackup-5.tgz");
 }
-if (-f "$BACKUPDIR/minebackup-3.tgz")
+if (-f "$BACKUPDIR/xonoticbackup-3.tgz")
 {
-	rename("$BACKUPDIR/minebackup-3.tgz", "$BACKUPDIR/minebackup-4.tgz");
+	rename("$BACKUPDIR/xonoticbackup-3.tgz", "$BACKUPDIR/xonoticbackup-4.tgz");
 }
-if (-f "$BACKUPDIR/minebackup-2.tgz")
+if (-f "$BACKUPDIR/xonoticbackup-2.tgz")
 {
-	rename("$BACKUPDIR/minebackup-2.tgz", "$BACKUPDIR/minebackup-3.tgz");
+	rename("$BACKUPDIR/xonoticbackup-2.tgz", "$BACKUPDIR/xonoticbackup-3.tgz");
 }
-if (-f "$BACKUPDIR/minebackup-1.tgz")
+if (-f "$BACKUPDIR/xonoticbackup-1.tgz")
 {
-	rename("$BACKUPDIR/minebackup-1.tgz", "$BACKUPDIR/minebackup-2.tgz");
+	rename("$BACKUPDIR/xonoticbackup-1.tgz", "$BACKUPDIR/xonoticbackup-2.tgz");
 }
 print "Done\nCreating New Backup: ";
-system("$TARCMD $BACKUPDIR/minebackup-1.tgz $XONOTICDIR");
+system("$TARCMD $BACKUPDIR/xonoticbackup-1.tgz $XONOTICDIR");
 print("Done!\n");
 exit 0;
