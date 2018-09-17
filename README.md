@@ -1,4 +1,4 @@
-# Xonotic backup script (1.0)
+# Xonotic backup script (1.1)
 Creates a backup of your Xonotic server
 
 Official support sites: [Official Github Repo](https://github.com/fstltna/XonoticBackup) - [Official Forum](https://fps.gameplayer.club/index.php/forum/backup-script)  - [Official Download Area](https://fps.gameplayer.club/index.php/downloads/category/5-server-tools)
